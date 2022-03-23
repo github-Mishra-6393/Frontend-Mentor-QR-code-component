@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+    
+    :root{
+      --main-bg-color: hsl(212, 45%, 89%);
+      --wraper-bg-color: hsl(0, 0%, 100%);
+      --ff:'Outfit', sans-serif;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      
+    }
+    html{
+      background-color: var(--main-bg-color);
+      
+    }
+    main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .wraper{
+      width: 20rem;
+      background-color: var(--wraper-bg-color);
+      min-height: 31rem;
+      height: auto;
+      overflow: hidden;
+      box-sizing: border-box;
+      border-radius: 0.8rem;
+    }
+    .wraper img{
+      display: block;
+      width: 18rem;
+      margin: 1rem auto;
+      border-radius: 0.8rem;
+    }
+    .wraper h1{
+      font-family: var(--ff);
+      font-weight: 700;
+      font-size: 1.4rem;
+      width: 16rem;
+      padding: 0.2rem 0.5rem;
+      text-align: left;
+      color: hsl(218, 44%, 22%);
+      margin: 0.4rem 1.5rem;
+
+    }
+    .wraper p{
+      font-family: var(--ff);
+      text-align: center;
+      margin: 0.6rem 1.4rem 1.4rem 1.4rem;
+      font-size: 1rem;
+      color: hsl(210, 7%, 58%);
+      word-spacing: 0.1rem;
+    }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    /*  FOR MOBILE */
+    @media only screen and (max-width:375px) and (min-width:333px) {
+      .wraper{
+      width: 19rem;
+      min-height: 25rem;
+      }
+    .wraper img{
+      width: 17.5rem;
+      border-radius: 0.8rem;
+    }
+    .wraper h1{
+      font-size: 1.2rem;
+      margin: 0.6rem 1.5rem;
+      word-spacing: 0.2rem;
+
+    }
+    .wraper p{
+      margin: 0.6rem 1.6rem 2.5rem 1.6rem;
+      font-size: 1rem;
+    }
+    }
+    @media only screen and (max-width:332px) and (min-width: 255px){
+      .wraper{
+      width: 15rem;
+      min-height: 19rem;
+      }
+    .wraper img{
+      width: 13rem;
+      border-radius: 0.8rem;
+    }
+    .wraper h1{
+      font-size: 0.9rem;
+      width: auto;
+      margin: 0.6rem 1.3rem;
+      word-spacing: 0.2rem;
+
+    }
+    .wraper p{
+      margin: 1rem 1.6rem 2.5rem 1.6rem;
+      font-size: 0.82rem;
+    }
+    }
+    @media only screen and (max-width:254px){
+      .wraper{
+      width: 12rem;
+      min-height: 17rem;
+      }
+    .wraper img{
+      width: 10rem;
+      border-radius: 0.7rem;
+    }
+    .wraper h1{
+      font-size: 0.74rem;
+      width: auto;
+      margin: 0.6rem 1.3rem;
+      word-spacing: 0.2rem;
+
+    }
+    .wraper p{
+      margin: 1rem 1.6rem 2.5rem 1.6rem;
+      font-size: 0.75rem;
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="wraper">
+      <img src="./images/image-qr-code.png" alt="Bar code">
+      <h1>Improve your front&ndash;end skills by building projects</h1>
+      <p>Sacn QR code to visit Frontend Menter and take your coding skills to the next level</p>
+    </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Ankit Mishra</a>.
+    </div>
+    </main>
+</body>
+</html>
